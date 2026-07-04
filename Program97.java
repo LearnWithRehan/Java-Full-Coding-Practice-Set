@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Program97 {
 
     //function to partition the array
-    static int partition(int arr[],
-                         int low,int high
+    static int partition(int[] arr,
+                         int low, int high
                          ){
         int pivot = arr[high];
         int i = low - 1;
@@ -25,7 +25,7 @@ public class Program97 {
        return i + 1;
     }
     //Quick sort function
-    static void quickSort(int arr[], int low,int hight){
+    static void quickSort(int[] arr, int low, int hight){
         if (low < hight){
             int pi = partition(arr,low,hight);
             quickSort(arr,low,pi-1);
@@ -39,7 +39,7 @@ public class Program97 {
         //user input
         System.out.print("enter the num of ele:- ");
         int n = sc.nextInt();
-        int arr[] = new int[n];
+        int[] arr = new int[n];
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i<n; i++){
             arr[i] = sc.nextInt();
